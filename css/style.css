@@ -1,0 +1,814 @@
+/* General Body and Container Styling */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+section {
+    margin: 20;
+    padding: 20;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 30;
+    z-index: 1000;
+    width: 100%;
+    padding: 0;
+    color: #333;
+    margin: 0;
+}
+
+/* Hero Section Background Image */
+.hero-section {
+    position: relative;
+    width: 100%;
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #f0e4f4, #d6e0f5);
+    background-size: cover;
+    z-index: 0;
+    color: #fff; /* Ensures text contrast */
+    overflow: hidden;
+    height: auto;
+}
+
+.hero-section .container {
+    position: relative; /* Ensures content is above the background */
+    z-index: 1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Enlarged Text Styling */
+.enlarged-heading-primary {
+    font-size: 5rem; /* Adjust the size as needed */
+    color: #4630FF;
+    display: inline;
+}
+
+.enlarged-heading-secondary {
+    font-size: 8rem; /* Adjust the size as needed */
+    color: #1F1F1F;
+    display: inline;
+}
+
+.enlarged-paragraph {
+    font-size: 1.5rem; /* Adjust the size as needed */
+    color: #5A5A5A;
+    margin-bottom: 2px;
+}
+
+.navbar-brand img.logo {
+    height: auto;
+    width: auto;
+}
+
+.nav-link {
+    font-size: 1rem;
+    color: #5A5A5A !important;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.navbar .nav-link {
+    color: #333 !important; /* Ensure the navbar links are readable against the gradient background */
+}
+
+/* Navbar Button Styling */
+.btn-primary-nav {
+    background-color: #4630FF;
+    border-color: #4630FF;
+    font-weight: bold;
+    width: 200px;
+    height: 40px;
+    border-radius: 25px;
+    color: #FFFFFF;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-nav:hover {
+    background-color: #3728CC;
+    border-color: #3728CC;
+    color: #FFFFFF;
+}
+
+/* Body Button Styling - INCREASE MY REVENUE */
+.btn-primary-body {
+    background-color: #4A1FFF;
+    border-color: #4A1FFF;
+    font-weight: bold;
+    width: 280px;
+    height: 55px;
+    border-radius: 15px;
+    color: #FFFFFF;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-body:hover {
+    background-color: #3A00FF;
+    border-color: #3A00FF;
+    color: #FFFFFF;
+}
+
+/* Body Button Styling - HOW IT WORKS */
+.btn-outline-dark {
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+    font-weight: bold;
+    width: 280px;
+    height: 55px;
+    border-radius: 15px;
+    color: #000000;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+/* Custom Section Styling */
+.custom-section {
+    position: relative; /* Ensure section is the reference for the absolute positioning */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Adjust padding as needed */
+    height: auto; /* Set the height to fill the viewport */
+    background: linear-gradient(to right, #f0e4f4, #d6e0f5); /* Example background */
+    text-align: center;
+}
+
+.image-wrapper {
+    position: relative; /* Container for the two images, relatively positioned */
+    display: inline-block; /* Keep the wrapper size to the content */
+}
+
+.img-break {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay-image {
+    position: absolute; /* Absolutely position the overlay image */
+    top: 50%; /* Adjust the percentage to position the overlay image vertically */
+    left: 50%; /* Adjust the percentage to position the overlay image horizontally */
+    width: auto; /* Make the overlay image size responsive */
+    height: 100%; /* Maintain aspect ratio */
+    z-index: 1; /* Keep it on top of the first image */
+    transform: translate(-50%, -50%);
+}
+
+/* Trusted Brands Section */
+.trusted-brands {
+    background: linear-gradient(to right, #f0e4f4, #d6e0f5);
+    padding: 0;
+}
+
+.trusted-brands-container {
+    background-color: #f0f0ff;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trusted-brands-container .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.trusted-brands-container .col-md-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.trusted-brands-container img {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.brand-title {
+    font-size: 1.25rem;
+    color: #4630FF;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.brand-logo {
+    max-width: 50%;
+    height: auto;
+    padding: 10px 0;
+}
+
+/* Features Section Styling */
+.features-container .feature-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure cards take full height */
+    background-color: #f0f0ff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features-container .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.features-container .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features-container .col-md-3 {
+    display: flex;
+    align-items: stretch; /* Ensure all cards stretch to the same height */
+}
+
+.features-container .feature-card img {
+    margin-bottom: 10px; /* Adjust spacing below the icon */
+}
+
+.feature-icon {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.feature-title {
+    font-size: 1rem;
+    color: #4630FF;
+    font-weight: bold;
+}
+
+.trusted-brands-container .row > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trusted-brands-container .row {
+    align-items: stretch; /* Ensure all columns are the same height */
+}
+
+/* Success Stories Section Styling */
+#success-stories-section {
+    background: url('images/pexels-harrisonhaines-3536257 1.png') no-repeat center center;
+    background-size: cover;
+    padding: 60px 0; /* Adjust padding as needed */
+    color: #fff; /* Ensure the text is readable against the background */
+    height: auto;
+}
+
+.section-subtitle {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.success-story-card {
+    background-color: #f0f0ff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.success-story-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.story-image {
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.story-title {
+    font-size: 1.25rem;
+    color: #4630FF;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.explore-button {
+    background-color: #4630FF;
+    border-color: #4630FF;
+    color: #fff;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #3728CC;
+    transform: scale(1.05);
+}
+
+/* Tech Partners Section Styling */
+.tech-partners-container {
+    background-color: #f8f9fa;
+    margin-top: 90px;
+    padding-bottom: 50px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4528B6;
+    padding-bottom: 50px;
+}
+
+.tech-partner-logo { 
+    width: 100%; 
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px; /* Adds some padding between logos */
+}
+
+/* Remove Card Styling */
+.tech-partner-card {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.trusted-brands, .success-stories-container, .tech-partners-container, .full-stack-container, .process-container, .faq-container {
+    margin: 0;
+}
+
+/* Full Stack Email & SMS Section Styling */
+.full-stack-container {
+    background: linear-gradient(to right, #f0e4f4, #d6e0f5);
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #4528B6;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #4528B6;
+    margin-bottom: 10px;
+}
+
+.full-stack-card {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.full-stack-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.full-stack-image-container {
+    flex: 1;
+    max-width: 40%; /* Adjust as needed */
+    margin-right: 20px;
+}
+
+.full-stack-text-container {
+    flex: 2;
+    max-width: 60%; /* Adjust as needed */
+}
+
+.full-stack-image {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+.full-stack-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.full-stack-title {
+    font-size: 2rem;
+    color: #4528B6;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.full-stack-text {
+    font-size: 1.5rem;
+    color: #4528B6;
+    line-height: 1.5;
+}
+
+.consultation-button {
+    background-color: #4528B6;
+    border-color: #4528B6;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 20px 30px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.consultation-button:hover {
+    background-color: #3728CC;
+    transform: scale(1.05);
+}
+
+/* Process Section */
+.process-container {
+    background: linear-gradient(to bottom, #3a3a8a, #1b1b5e); /* Purple gradient background */
+    padding: 60px 0;
+    position: relative;
+    z-index: 1;
+    height: auto;
+}
+
+.section-title-process {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.section-description-process {
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.process-flow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.process-step {
+    flex: 1 1 calc(33.333% - 40px);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 2;
+}
+
+.process-card {
+    background-color: #2d2d6e;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: spaoe-between; /* Center content vertically */
+    height: 100%
+}
+
+.process-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon-image {
+    width: 60px;
+    height: auto;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.process-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.process-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
+
+.number-circle {
+    background-color: #FFFFFF;
+    color: #3a3a8a;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0 auto 15px auto;
+    z-index: 3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.start-button {
+    background-color: #FFFFFF;
+    color: #3a3a8a;
+    border-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #3a3a8a;
+    color: #FFFFFF;
+    transform: scale(1.05);
+}
+
+/* Dashed Path */
+.process-flow::before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 90%;
+    height: 50%;
+    border-top: 3px dashed #FFFFFF;
+    border-bottom: 3px dashed #FFFFFF;
+    z-index: 1;
+    transform: rotate(0deg);
+}
+
+/* FAQ Section Styling */
+.faq-container {
+    background-color: #f8f9fa;
+    padding: 0;
+}
+
+.section-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #4528B6;
+    margin-bottom: 20px;
+}
+
+.faq-card {
+    background-color: #f0f0ff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 30px;
+    opacity: 4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.faq-question {
+    font-size: 1.5rem;
+    color: #4630FF;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.faq-answer {
+    font-size: 1rem;
+    color: #5A5A5A;
+}
+
+.faq-answer ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.hovered {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    /* Hero Section */
+    .hero-section {
+        padding: 50px 20px;
+    }
+
+    .enlarged-paragraph {
+        font-size: 1.25rem;
+    }
+
+    .btn-primary-body, .btn-outline-dark {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Full Stack Section */
+    .full-stack-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .full-stack-image {
+        margin-bottom: 20px; /* Space between image and text when stacked */
+    }
+
+    .full-stack-title {
+        font-size: 1.5rem;
+    }
+
+    .full-stack-text {
+        font-size: 0.9rem;
+    }
+
+    .full-stack-card {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .full-stack-image-container {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .enlarged-heading-primary {
+        font-size: 3rem;
+    }
+
+    .enlarged-heading-secondary {
+        font-size: 4rem;
+    }
+
+    .btn-primary-body, .btn-outline-dark {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .feature-card {
+        margin-bottom: 20px;
+    }
+
+    .process-step {
+        flex: 1 1 100%;
+    }
+
+    .tech-partner-logo {
+        max-width: 120px;
+    }
+
+     /* Trusted Brands Section */
+
+     .trusted-brands-container .row {
+        flex-direction: column;
+        width: 100%; /* Ensure the row takes full width */
+    }
+
+     .trusted-brands-container .col-md-3 {
+       flex: 1 1 100%; /* Each card takes full width */
+        max-width: 100%; /* Ensure each column uses 100% of the available width */
+        margin-bottom: 20px; /* Add space between stacked cards */
+    }
+    .trusted-brands-container img.brand-logo {
+        width: 100%; /* Make the logo take the full width of the card */
+        height: auto; /* Maintain the aspect ratio */
+        margin-bottom: 10px; /* Add some space below the logo */
+    }
+
+    .features-container .feature-card {
+        width: 100%; /* Make the feature card take the full width */
+        max-width: 100%; /* Ensure full width usage */
+    }
+
+    .feature-title {
+        font-size: 1rem;
+    }
+
+    .brand-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Features Section */
+    .features-container .col-md-3 {
+        flex-basis: 100%;
+        max-width: auto;
+        margin-bottom: 20px;
+    }
+
+    .features-container {
+        flex-direction: row;
+    }
+
+    /* Success Stories Section */
+    #success-stories-section .row {
+        flex-direction: row;
+    }
+
+    .success-story-card {
+        margin-bottom: 30px;
+    }
+
+    .story-title {
+        font-size: 1.25rem;
+    }
+
+    /* Tech Partners Section */
+    .tech-partner-logo {
+        max-width: 100px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Responsive Adjustments for small screens */
+@media (max-width: 360px) {
+    .full-stack-title, .story-title, .feature-title {
+        font-size: 1.1rem;
+    }
+
+    .full-stack-text, .faq-answer, .enlarged-paragraph, .feature-title, .brand-title {
+        font-size: 0.75rem;
+    }
+
+    .btn-primary-nav {
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .btn-primary-body, .btn-outline-dark {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .navbar .nav-link {
+        font-size: 0.8rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .hero-section {
+        padding: 30px 15px;
+    }
+
+    .enlarged-heading-primary {
+        font-size: 2rem;
+    }
+
+    .enlarged-heading-secondary {
+        font-size: 3rem;
+    }
+}
